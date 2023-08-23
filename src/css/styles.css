@@ -5,21 +5,74 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./about_us.css');
+@import url('./price.css');
+@import url('./our_products.css');
+@import url('./bestsellers.css');
+@import url('./client_reviews.css');
+@import url('./subscription.css');
+@import url('./footer.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: var(--blue-font);
+  background-color: var(--white, #fff);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --blue-font: #0a224a;
+  --dark-gray-bg-color: #7a7a7a;
+  --gray-bg-color: #b6b6b6;
+  --light-gray-bg-color: #d9d9d9;
+  --light-blue: #f7faff;
+  --white: #fff;
+  --error-state: #e74a3b;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
 }
