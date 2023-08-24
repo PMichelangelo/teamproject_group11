@@ -58,7 +58,7 @@
     display: none;
   }
   .our-products .img-item {
-    flex-basis: calc((100%-16px) / 2);
+    flex-basis: calc((100% - 16px) / 2);
   }
   .products-img {
     width: 344px;
