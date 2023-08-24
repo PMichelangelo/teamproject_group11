@@ -1,0 +1,82 @@
+.about-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.line-container {
+  position: relative;
+  width: 30px;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.line-container::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: var(--blue-font);
+  /* top: 50%;
+  left: 0;
+  transform: translateY(-50%); */
+}
+
+.about-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about-subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about-description {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 30px;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.advantages-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.advantages-item {
+  width: 170px;
+}
+
+.advantages-numbers {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+}
