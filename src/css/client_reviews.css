@@ -1,0 +1,29 @@
+.clients-reviews{
+    background-color: var(--light-blue, #F7FAFF);
+    padding: 36px 0;
+}
+
+.reviews-title{
+    color: var(--blue-font, #0A224A);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-wrap{
+    max-width: 343px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    margin: 0 auto;
+}
+
+.reviews-wrap-items{
+    display: flex;
+}
+
