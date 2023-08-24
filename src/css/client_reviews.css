@@ -103,6 +103,10 @@
             max-width: 1320px;
         }
 
+        .clients-reviews {
+            padding: 60px 0;
+        }
+
     .reviews-third-list-item{
         display: block;
     }
