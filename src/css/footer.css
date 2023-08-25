@@ -12,7 +12,7 @@
     margin-bottom: 36px;
 }
 
-.footer-logo {
+.logo-icon {
     width: 100px;
     height: 16px;
     fill: var(--white);
@@ -89,7 +89,7 @@
     margin-bottom: 20px;
 }
 
-.footer-logo {
+.logo-icon {
     width: 127px;
 }
 
