@@ -151,5 +151,10 @@
     justify-content: center;
     gap: 100px;
     max-width: 1096px;
+    padding: 0;
+  }
+
+  .newsletter-left-side {
+    min-width: 536px;
   }
 }
