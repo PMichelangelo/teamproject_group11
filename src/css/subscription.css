@@ -31,16 +31,13 @@
 }
 
 .newsletter-field {
+  display: flex;
   margin-bottom: 20px;
 }
 
-.newsletter-label {
-  display: flex;
+.newsletter-input {
   font-size: 16px;
   line-height: 1.5;
-}
-
-.newsletter-input {
   height: 50px;
   width: 100%;
   padding: 0 20px;
@@ -80,6 +77,12 @@
   width: 25px;
   height: 25px;
   border: 1px solid var(--gray-bg-color, #b6b6b6);
+  fill: transparent;
+}
+
+.newsletter-check:checked + .newsletter-check-text .newsletter-check-item {
+  background-color: var(--blue-font, #0a224a);
+  fill: var(--white, #fff);
 }
 
 .newsletter-submit-btn {
@@ -93,6 +96,11 @@
   align-items: center;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.newsletter-submit-btn:hover,
+.newsletter-submit-btn:focus {
+  background-color: #061835;
 }
 
 .chek-icon {
