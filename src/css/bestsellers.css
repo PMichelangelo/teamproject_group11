@@ -1,9 +1,18 @@
+.bestsellers-justify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .bestsellers-container {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
+  width: 1096px;
 }
+
 /* img {
   display: block;
   max-width: 100%;
