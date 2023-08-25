@@ -2,11 +2,6 @@
   padding: 64px 0;
 }
 
-/* .container {
-  padding: 0 16px;
-  outline: 2px solid red;
-} */
-
 .newsletter-left-side {
   margin-bottom: 30px;
 }
@@ -60,9 +55,6 @@
 .newsletter-check {
 }
 
-.visually-hidden {
-}
-
 .newsletter-check-text {
   color: var(--dark-gray-bg-color, #7a7a7a);
   font-size: 16px;
@@ -102,9 +94,6 @@
 .newsletter-submit-btn:hover,
 .newsletter-submit-btn:focus {
   background-color: #061835;
-}
-
-.chek-icon {
 }
 
 .newsletter-img {
