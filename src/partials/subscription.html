@@ -1,0 +1,79 @@
+<section class="newsletter" id="newsletter-subscribe">
+  <div class="container">
+    <div class="newsletter-left-side">
+      <h1 class="newsletter-subtitle">Newsletter</h1>
+      <p class="newsletter-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="newsletter-form">
+        <div class="newsletter-field">
+          <input
+            type="text"
+            name="newsletter-user-name"
+            class="newsletter-input"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+        </div>
+        <div class="newsletter-field">
+          <input
+            type="email"
+            name="newsletter-email"
+            class="newsletter-input"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        <div class="newsletter-field-check">
+          <input
+            type="checkbox"
+            id="user-agree"
+            name="user-agree"
+            class="newsletter-check visually-hidden"
+            value="true"
+          />
+          <label for="user-agree" class="newsletter-check-text">
+            <span class="newsletter-check-item">
+              <svg class="chek-icon" width="13" height="13">
+                <use href="img/symbol-defs.svg#Property-1check-1"></use></svg
+            ></span>
+            Agree to subscribe to the newsletter</label
+          >
+          <button type="submit" class="newsletter-submit-btn">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="newsletter-img">
+      <picture>
+        <source
+          srcset="
+            img/subscription/nwsletter-desk.jpg    1x,
+            img/subscription/nwsletter-desk-2x.jpg 2x
+          "
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="
+            img/subscription/nwsletter-tab.jpg    1x,
+            img/subscription/nwsletter-tab-2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            img/subscription/nwsletter-mob.jpg    1x,
+            img/subscription/nwsletter-mob-2x.jpg 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          src="img/subscription/nwsletter-desk.jpg"
+          width="704"
+          alt="a book on the table"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
