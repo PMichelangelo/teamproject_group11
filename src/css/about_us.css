@@ -1,7 +1,32 @@
 .about-section {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+.about-us-text-container {
   background-color: var(--light-blue);
+  padding: 36px 64px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.about-us-img-wrap {
+  overflow: hidden;
+}
+
+.about-us-img {
+  position: absolute;
+  width: 100%;
+  max-width: calc(100% + 32px);
+  bottom: 0;
+  left: 0;
+}
+
+.about-us-text-wrap {
 }
 
 .title-container {
@@ -51,8 +76,7 @@
 }
 
 .advantages-list {
-  margin-top: 30px;
-  padding-bottom: 64px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,6 +149,10 @@
 
   .advantages-text {
     font-size: 18px;
+  }
+
+  .about-us-img {
+    position: unset;
   }
 }
 
