@@ -82,7 +82,8 @@
 
 .newsletter-check:checked + .newsletter-check-text .newsletter-check-item {
   background-color: var(--blue-font, #0a224a);
-  fill: var(--white, #fff);
+  stroke: var(--white, #fff);
+  border: none;
 }
 
 .newsletter-submit-btn {
