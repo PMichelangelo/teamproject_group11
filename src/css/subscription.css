@@ -29,6 +29,11 @@
   margin-bottom: 20px;
 }
 
+.newsletter-field:hover,
+.newsletter-field:focus {
+  border: 1px solid var(--blue-font, #0a224a);
+}
+
 .newsletter-input {
   font-size: 16px;
   line-height: 1.5;
@@ -36,6 +41,9 @@
   width: 100%;
   padding: 0 20px;
   border: 1px solid var(--dark-gray-bg-color, #b6b6b6);
+}
+
+.newsletter-input::after {
 }
 
 .newsletter-input::placeholder {
