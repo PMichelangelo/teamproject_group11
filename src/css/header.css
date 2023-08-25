@@ -1,6 +1,4 @@
 .containers {
-  max-width: 375px;
-  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -186,6 +184,7 @@
   }
 
   .page-header {
+    max-width: 1440px;
     padding: 28px 60px;
   }
 
