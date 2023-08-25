@@ -150,5 +150,6 @@
     display: flex;
     justify-content: center;
     gap: 100px;
+    max-width: 1096px;
   }
 }
