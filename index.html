@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/teamproject_group11/assets/index-e4fa4357.js"></script>
-  <link rel="stylesheet" href="/teamproject_group11/assets/index-92a3d6ba.css">
+  <script type="module" crossorigin src="/teamproject_group11/assets/index-72e3364a.js"></script>
+  <link rel="stylesheet" href="/teamproject_group11/assets/index-3b9b8423.css">
 </head>
 
 <body>
@@ -354,7 +354,77 @@
     <!--Polina-->
     
     <!--Vitalii-->
-    
+    <section class="newsletter" id="newsletter-subscribe">
+  <div class="container">
+    <div class="newsletter-left-side">
+      <h1 class="newsletter-subtitle">Newsletter</h1>
+      <p class="newsletter-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="newsletter-form">
+        <div class="newsletter-field">
+          <input
+            type="text"
+            name="newsletter-user-name"
+            class="newsletter-input"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+        </div>
+        <div class="newsletter-field">
+          <input
+            type="email"
+            name="newsletter-email"
+            class="newsletter-input"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        <div class="newsletter-field-check">
+          <input
+            type="checkbox"
+            id="user-agree"
+            name="user-agree"
+            class="newsletter-check visually-hidden"
+            value="true"
+          />
+          <label for="user-agree" class="newsletter-check-text">
+            <span class="newsletter-check-item">
+              <svg class="chek-icon" width="13" height="13">
+                <use href="/teamproject_group11/assets/symbol-defs-089effaa.svg#Property-1check-1"></use></svg
+            ></span>
+            Agree to subscribe to the newsletter</label
+          >
+          <button type="submit" class="newsletter-submit-btn">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="newsletter-img">
+      <picture>
+        <source
+          srcset="/teamproject_group11/assets/nwsletter-desk-53c0a79d.jpg 1x, /teamproject_group11/assets/nwsletter-desk-2x-47e15040.jpg 2x"
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="/teamproject_group11/assets/nwsletter-tab-d76b258c.jpg 1x, /teamproject_group11/assets/nwsletter-tab-2x-10c72753.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="/teamproject_group11/assets/nwsletter-mob-5afa0a9e.jpg 1x, /teamproject_group11/assets/nwsletter-mob-2x-a3510447.jpg 2x"
+          media="(min-width:320px)"
+        />
+        <img
+          src="/teamproject_group11/assets/nwsletter-desk-53c0a79d.jpg"
+          width="704"
+          alt="a book on the table"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
   </main>
   <!--Viktor-->
   <footer></footer>
