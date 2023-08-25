@@ -17,6 +17,11 @@
   padding: 28px 16px;
 }
 
+.header-icon {
+  height: 16px;
+  fill: #000000;
+}
+
 .header-link {
   text-decoration: none;
 }
@@ -29,19 +34,30 @@
   display: none;
 }
 
+.header-nav-item {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-item:hover,
+.header-nav-item:focus {
+  color: #01b3ad;
+}
+
 .header-icon {
+  min-height: 32px;
+  min-width: 32px;
   fill: transparent;
   stroke: black;
 }
 
 .mob-icon {
+  min-height: 32px;
+  min-width: 32px;
   fill: transparent;
   stroke: black;
 }
 
 .menu-open-btn {
-  min-height: 32px;
-  min-width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,8 +189,12 @@
     z-index: 2;
   }
 
+  .mob-menu-menu {
+    background-color: #f7faff;
+  }
+
   .mob-menu-link {
-    font-style: 18px;
+    font-size: 18px;
   }
 }
 
@@ -194,6 +214,10 @@
 
   .mob-menu {
     display: none;
+  }
+
+  .mob-menu-item {
+    font-size: 18px;
   }
 
   .header-nav {
