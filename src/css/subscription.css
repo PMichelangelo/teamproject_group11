@@ -28,12 +28,6 @@
   display: flex;
   position: relative;
   margin-bottom: 20px;
-  border: 1px solid var(--dark-gray-bg-color, #b6b6b6);
-}
-
-.newsletter-field:hover,
-.newsletter-field:focus {
-  border: 1px solid var(--blue-font, #0a224a);
 }
 
 .newsletter-input {
@@ -43,15 +37,25 @@
   width: 100%;
   padding-left: 20px;
   padding-right: 50px;
-  border: none;
+  border: 1px solid var(--dark-gray-bg-color, #b6b6b6);
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .newsletter-input::after {
+.newsletter-input:hover,
+.newsletter-input:focus {
+  border: 1px solid var(--blue-font, #0a224a);
+}
+
+/* .input-pseudo-element::after {
   content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translatey(-50%);
   width: 1px;
   height: 19px;
   background-color: #0a224a;
-  display: block;
 } */
 
 .newsletter-input::placeholder {
@@ -60,8 +64,10 @@
   line-height: 1.5;
 }
 
-.newsletter-field .newsletter-input:invalid:focus {
+.newsletter-input:not(:placeholder-shown):not(:focus):invalid {
   border: 1px solid var(--error-state, #e74a3b);
+  color: var(--error-state, #e74a3b);
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-input-icon {
@@ -69,9 +75,11 @@
   top: 13px;
   right: 20px;
   fill: transparent;
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-input:invalid:focus + .newsletter-input-icon {
+.newsletter-input:not(:placeholder-shown):not(:focus):invalid
+  + .newsletter-input-icon {
   fill: var(--error-state, #e74a3b);
 }
 
@@ -98,12 +106,20 @@
   border: 1px solid var(--gray-bg-color, #b6b6b6);
   fill: transparent;
   margin-right: 8px;
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-check:checked + .newsletter-check-text .newsletter-check-item {
   background-color: var(--blue-font, #0a224a);
   stroke: var(--white, #fff);
   border: 1px solid var(--blue-font, #0a224a);
+}
+
+.newsletter-check:focus + .newsletter-check-text .newsletter-check-item {
+  border-color: var(--blue-font, #0a224a);
 }
 
 .newsletter-submit-btn {
@@ -118,6 +134,7 @@
   font-size: 16px;
   line-height: 1.5;
   border: none;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-submit-btn:hover,
