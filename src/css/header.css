@@ -17,9 +17,10 @@
   padding: 28px 16px;
 }
 
-.header-icon {
+.logo-icon {
+  width: 100px;
   height: 16px;
-  fill: #000000;
+  fill: currentColor;
 }
 
 .header-link {
@@ -169,6 +170,10 @@
     padding: 28px 16px;
   }
 
+  .logo-icon {
+    width: 127px;
+  }
+
   .header-nav {
     display: none;
   }
@@ -189,7 +194,7 @@
     z-index: 2;
   }
 
-  .mob-menu-menu {
+  .bg-menu {
     background-color: #f7faff;
   }
 
@@ -216,7 +221,7 @@
     display: none;
   }
 
-  .mob-menu-item {
+  .header-nav-item {
     font-size: 18px;
   }
 
