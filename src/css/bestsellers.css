@@ -1,17 +1,18 @@
 .bestsellers-justify {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
+  padding: 64px 16px;
 }
 
-.bestsellers-container {
+/* .bestsellers-container {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
   width: 1096px;
-}
+} */
 
 /* img {
   display: block;
@@ -22,38 +23,96 @@
 .bestsellers-title {
   text-align: center;
   color: var(--blue-font, #0a224a);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
-.bestsellers-wrap-container {
+.bestsellers-container {
 }
 .bestsellers-wrap {
   width: calc((100% - 20px) / 2);
 }
 .bestsellers-wrap-title {
-  max-width: 258px;
+  width: 343px;
   color: var(--blue-font, #0a224a);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 .bestsellers-wrap-text {
-  max-width: 258px;
+  width: 343px;
   color: var(--blue-font, #0a224a);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+  margin-bottom: 30px;
 }
-.bestsellers-list {
+/* .bestsellers-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px 20px;
+} */
+.bestsellers-item:nth-child(n + 3) {
+  display: none;
 }
-.bestsellers-item {
+.txt {
+  margin-bottom: unset;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 428px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+  .bestsellers-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    /* width: 1096px; */
+  }
+  .bestsellers-wrap {
+    width: calc((100% - 32px) / 2);
+  }
+  .bestsellers-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px 32px;
+  }
+  .bestsellers-item:nth-child(n + 3) {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  .bestsellers-justify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bestsellers-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    width: 1096px;
+  }
+  .bestsellers-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px 20px;
+  }
 }
