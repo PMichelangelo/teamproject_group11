@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/teamproject_group11/assets/index-798471a9.js"></script>
-  <link rel="stylesheet" href="/teamproject_group11/assets/index-be4f2f26.css">
+  <script type="module" crossorigin src="/teamproject_group11/assets/index-0581890d.js"></script>
+  <link rel="stylesheet" href="/teamproject_group11/assets/index-6c12bef5.css">
 </head>
 
 <body>
@@ -596,37 +596,6 @@
             By using this website, you agree to the <a class="footer-privacy-link" href="#">Terms of Service </a>and <a class="footer-privacy-link" href="#">Privacy Policy</a>
         </p>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Отримуємо всі елементи з вказаними класами
-                const parentElements = document.querySelectorAll('.footer-socials-link, .logo-link, .footer-nav-link, .footer-company-location, .footer-contact, .footer-privacy-link');
-
-                // Додаємо обробник події для кожного батьківського елемента
-                parentElements.forEach(parentElement => {
-                    const linkElement = parentElement.querySelector('a'); // Отримуємо <a> елемент всередині батьківського елемента
-
-                    if (linkElement) {
-                        parentElement.style.transition = 'transform 300ms cubic-bezier(0.4, 0, 0.2, 1)'; // Додаємо перехід для властивості transform
-
-                        parentElement.addEventListener('mouseenter', () => {
-                            linkElement.style.transform = 'scale(1.1)';
-                        });
-
-                        parentElement.addEventListener('mouseleave', () => {
-                            linkElement.style.transform = 'scale(1)';
-                        });
-
-                        parentElement.addEventListener('focus', () => {
-                            linkElement.style.transform = 'scale(1.1)';
-                        });
-
-                        parentElement.addEventListener('blur', () => {
-                            linkElement.style.transform = 'scale(1)';
-                        });
-                    }
-                });
-            });
-    </script>
 </footer>
 
 
