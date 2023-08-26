@@ -1,32 +1,8 @@
 .about-section {
   padding-top: 64px;
   padding-bottom: 64px;
-}
-
-.about-us-text-container {
+  /* background-color: aqua; */
   background-color: var(--light-blue);
-  padding: 36px 64px;
-}
-
-.about-us {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.about-us-img-wrap {
-  overflow: hidden;
-}
-
-.about-us-img {
-  position: absolute;
-  width: 100%;
-  max-width: calc(100% + 32px);
-  bottom: 0;
-  left: 0;
-}
-
-.about-us-text-wrap {
 }
 
 .title-container {
@@ -76,7 +52,8 @@
 }
 
 .advantages-list {
-  padding-top: 30px;
+  margin-top: 30px;
+  padding-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,6 +79,14 @@
   line-height: 1.5;
 }
 
+.img-tablet {
+  display: none;
+}
+
+.img-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -124,6 +109,10 @@
   .advantages-text {
     font-size: 16px;
   }
+
+  .img-tablet {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -133,26 +122,41 @@
   }
 
   .about-section {
-    padding: 36px 64px;
+    margin-bottom: 100px;
+    padding: 0;
+    background-color: inherit;
   }
+
+  .about-container {
+    padding: 36px 64px 36px 64px;
+    max-width: 576px;
+    background-color: var(--light-blue);
+    margin-bottom: 30px;
+  }
+
   .about-subtitle {
-    width: 535px;
+    font-size: 32px;
   }
 
   .about-description {
-    width: 535px;
+    font-size: 18px;
   }
 
   .advantages-list {
     flex-direction: row;
+    padding-bottom: 0;
   }
 
   .advantages-text {
     font-size: 18px;
   }
 
-  .about-us-img {
-    position: unset;
+  .img-mobile {
+    display: none;
+  }
+
+  .img-tablet {
+    display: block;
   }
 }
 
@@ -160,5 +164,41 @@
   .container {
     max-width: 1440px;
     padding: 0 60px;
+  }
+
+  .tablet-container {
+    height: 540px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-container {
+    padding: 36px 69px 36px 69px;
+    max-width: 760px;
+  }
+
+  .about-subtitle {
+    width: 622px;
+  }
+
+  .about-description {
+    width: 622px;
+  }
+
+  .advantages-list {
+    gap: 55px;
+    width: 622px;
+  }
+
+  .img-tablet {
+    display: none;
+  }
+
+  .about-container {
+    margin: 0px 24px 0px 0px;
+  }
+
+  .img-desktop {
+    display: block;
   }
 }
