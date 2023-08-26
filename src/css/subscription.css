@@ -47,8 +47,12 @@
   border: 1px solid var(--blue-font, #0a224a);
 }
 
-/* .newsletter-input::after {
+/* .input-pseudo-element::after {
   content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translatey(-50%);
   width: 1px;
   height: 19px;
   background-color: #0a224a;
