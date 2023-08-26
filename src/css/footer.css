@@ -15,7 +15,7 @@
 .logo-icon {
     width: 100px;
     height: 16px;
-    fill: var(--white);
+    fill: currentColor;
 }
 
 .footer-socials-list {
@@ -26,7 +26,7 @@
 .footer-socials-icon {
     width: 28px;
     height: 28px;
-    fill: var(--white);
+    fill: currentColor;
 }
 
 .footer-page-navigation {
@@ -75,6 +75,27 @@
 .footer-privacy-link {
     text-decoration: underline;
 }
+
+/* .logo-link,
+.footer-working-info-item:first-child,
+.footer-contacts-item,
+.footer-socials-item,
+.footer-nav-item {
+    max-width: max-content;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-link:hover,
+.logo-link:focus,
+.footer-working-info-item:first-child:hover,
+.footer-contacts-item:hover {
+    transform: scale(1.05);
+}
+
+.footer-socials-item:hover,
+.footer-nav-item:hover {
+    transform: scale(1.1);
+} */
 
 @media screen and (min-width: 768px) {
 .page-footer {
