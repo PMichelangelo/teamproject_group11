@@ -72,23 +72,13 @@
   .container {
     max-width: 704px;
   }
-  .bestsellers-container {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    /* width: 1096px; */
-  }
   .bestsellers-wrap {
-    width: calc((100% - 32px) / 2);
-  }
-  .bestsellers-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px 32px;
+    gap: 30px 20px;
   }
-  .bestsellers-item:nth-child(n + 3) {
+  .img-bed .bestsellers-item:nth-child(n + 3) {
     display: block;
   }
 }
