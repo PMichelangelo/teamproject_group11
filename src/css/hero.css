@@ -45,6 +45,8 @@
   align-items: center;
   width: 224px;
   height: 48px;
+  font-size: 16px;
+
   background-color: #0a224a;
   color: #ffffff;
   line-height: 1.5;
@@ -69,8 +71,6 @@
     background-size: cover;
     background-image: url(/img/hero/tab-bg-left.jpg),
       url(/img/hero/tab-bg-right.jpg);
-    /* background-size: 338px, 387px;
-    background-position: 20px 263px, calc(100% - 32px) 58px; */
     background-size: 308px, 367px;
     background-position: 32px 263px, calc(100% - 32px) 57px;
     gap: 410px;
@@ -115,13 +115,10 @@
     max-width: 1440px;
     padding: 0 60px;
     height: 594px;
-    max-width: 1440px;
     background-image: url(/img/hero/hero-bg-left.jpg),
       url(/img/hero/hero-bg-center.jpg), url(/img/hero/hero-bg-right.jpg);
     background-size: 310px, 648px, 312px;
     background-position: 60px 265px, 395px 64px, calc(100% - 60px) 64px;
-    /* background-size: 310px, 750px, 335px;
-    background-position: 20px 265px, 355px 64px, calc(100% - 10px) 64px; */
     gap: 360px;
     flex-direction: row;
     justify-content: space-between;
