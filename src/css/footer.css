@@ -76,7 +76,7 @@
     text-decoration: underline;
 }
 
-/* .logo-link,
+.logo-link,
 .footer-working-info-item:first-child,
 .footer-contacts-item,
 .footer-socials-item,
@@ -95,7 +95,7 @@
 .footer-socials-item:hover,
 .footer-nav-item:hover {
     transform: scale(1.1);
-} */
+}
 
 @media screen and (min-width: 768px) {
 .page-footer {
