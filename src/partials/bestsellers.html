@@ -3,72 +3,155 @@
     <h2 class="bestsellers-title">Bestsellers</h2>
     <div class="bestsellers-container">
       <div class="bestsellers-wrap-container">
-        <img
-          class="img-bed"
-          srcset="
-            ./img/bestsellers/bestsellers-bed-mob-1x.jpg 1x,
-            ./img/bestsellers/bestsellers-bed-mob-2x.jpg 2x
-          "
-          src="./img/bestsellers/bestsellers-bed-mob.jpg"
-          alt="bed"
-          width="343"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/bestsellers/bestsellers-bed-1x.jpg 1x,
+              ./img/bestsellers/bestsellers-bed-2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./img/bestsellers/besellers-bed-tab-1x.jpg 1x,
+              ./img/bestsellers/besellers-bed-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./img/bestsellers/bestsellers-bed-mob-1x.jpg 1x,
+              ./img/bestsellers/bestsellers-bed-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+          <img
+            src="./img/bestsellers/bestsellers-bed-1x.jpg"
+            alt="bed"
+            width="704"
+          />
+        </picture>
         <h3 class="bestsellers-wrap-title">The modern platform bed</h3>
         <p class="bestsellers-wrap-text">750&#x24;</p>
       </div>
       <div class="bestsellers-wrap">
         <ul class="bestsellers-list">
           <li class="bestsellers-item">
-            <img
-              srcset="
-                ./img/bestsellers/bestsellers-lounge-mob-1x.jpg 1x,
-                ./img/bestsellers/bestsellers-lounge-mob-2x.jpg 2x
-              "
-              src="./img/bestsellers/bestsellers-lounge-mob.jpg"
-              alt="lounge"
-              width="343"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./img/bestsellers/bestsellers-lounge-1x.jpg 1x,
+                  ./img/bestsellers/bestsellers-lounge-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers/besellers-lounge-tab-1x.jpg 1x,
+                  ./img/bestsellers/besellers-lounge-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers/bestsellers-lounge-mob-1x.jpg 1x,
+                  ./img/bestsellers/bestsellers-lounge-mob-2x.jpg 2x
+                "
+                media="(min-width:320px)"
+              />
+              <img
+                src="./img/bestsellers/bestsellers-lounge.jpg"
+                alt="longe"
+                width="343"
+              />
+            </picture>
             <h3 class="bestsellers-wrap-title">The Cozy Lounge Chair</h3>
-            <p class="bestsellers-wrap-text">230&#x24;</p>
+            <p class="bestsellers-wrap-text text">230&#x24;</p>
           </li>
           <li class="bestsellers-item">
-            <img
-              srcset="
-                ./img/bestsellers/bestsellers-chair-mob-1x.jpg 1x,
-                ./img/bestsellers/bestsellers-chair-mob-2x.jpg 2x
-              "
-              src="./img/bestsellers/bestsellers-chair-mob.jpg"
-              alt="chair"
-              width="343"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./img/bestsellers/bestsellers-chair-1x.jpg 1x,
+                  ./img/bestsellers/bestsellers-chair-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers/besellers-chair-tab-1x.jpg 1x,
+                  ./img/bestsellers/besellers-chair-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers/bestsellers-chair-mob-1x.jpg 1x,
+                  ./img/bestsellers/bestsellers-chair-mob-2x.jpg 2x
+                "
+                media="(min-width:320px)"
+              />
+              <img
+                class="img-bed"
+                src="./img/bestsellers/bestsellers-chair.jpg"
+                alt="chair"
+                width="343"
+              />
+            </picture>
             <h3 class="bestsellers-wrap-title">The industrial accent chair</h3>
-            <p class="bestsellers-wrap-text">250&#x24;</p>
+            <p class="bestsellers-wrap-text text">250&#x24;</p>
           </li>
           <li class="bestsellers-item items">
-            <img
-              srcset="
-                ./img/bestsellers/bestsellers-sleek-stand-1x.jpg 1x,
-                ./img/bestsellers/bestsellers-sleek-stand-2x.jpg 2x
-              "
-              src="./img/bestsellers/bestsellers-sleek-stand.jpg"
-              alt="sleek stand"
-              width="343"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./img/bestsellers/bestsellers-sleek-stand-1x.jpg 1x,
+                  ./img/bestsellers/bestsellers-sleek-stand-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers/besellers-sleek-stand-tab-1x.jpg 1x,
+                  ./img/bestsellers/besellers-sleek-stand-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img
+                class="img-bed"
+                src="./img/bestsellers/bestsellers-sleek-stand.jpg"
+                alt="sleek stand"
+                width="343"
+              />
+            </picture>
             <h3 class="bestsellers-wrap-title">The sleek stand</h3>
-            <p class="bestsellers-wrap-text">300&#x24;</p>
+            <p class="bestsellers-wrap-text text">300&#x24;</p>
           </li>
-          <li class="bestsellers-item items">
-            <img
-              srcset="
-                ./img/bestsellers/bestsellers-sofa-1x.jpg 1x,
-                ./img/bestsellers/bestsellers-sofa-2x.jpg 2x
-              "
-              src="./img/bestsellers/bestsellers-sofa.jpg"
-              alt="sofa"
-              width="343"
-            />
+          <li class="bestsellers-item items items">
+            <picture>
+              <source
+                srcset="
+                  ./img/bestsellers/bestsellers-sofa-1x.jpg 1x,
+                  ./img/bestsellers/bestsellers-sofa-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers/besellers-sofa-tab-1x.jpg 1x,
+                  ./img/bestsellers/besellers-sofa-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img
+                class="img-bed"
+                src="./img/bestsellers/bestsellers-sofa.jpg"
+                alt="sofa"
+                width="343"
+              />
+            </picture>
             <h3 class="bestsellers-wrap-title">The minimalist sofa</h3>
-            <p class="bestsellers-wrap-text">650&#x24;</p>
+            <p class="bestsellers-wrap-text text">650&#x24;</p>
           </li>
         </ul>
       </div>
