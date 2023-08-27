@@ -1,4 +1,4 @@
-
+import './js/menu.js'
 (() => {
   const refs = {
     openMenuBtn: document.querySelector('[data-menu-open]'),
