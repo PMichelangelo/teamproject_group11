@@ -7,6 +7,7 @@
   text-align: center;
   justify-content: space-between;
   align-items: center;
+  padding: 36px 0;
 }
 
 .header-nav {
@@ -106,7 +107,6 @@
 
 .mob-menu-menu {
   display: flex;
-  height: 88px;
   padding: 28px 16px 28px 16px;
   justify-content: center;
   align-items: center;
@@ -114,6 +114,10 @@
 }
 
 .container.mob-menu-menu {
+  max-width: unset;
+}
+
+.container.page-header {
   max-width: unset;
 }
 
@@ -196,7 +200,11 @@
     height: 40px;
   }
 
-  .mob-icon {
+  .container.page-header {
+    max-width: 768px;
+  }
+
+  .menu-close-btn {
     width: 40px;
     height: 40px;
   }
@@ -226,6 +234,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .container.page-header {
+    max-width: 1440px;
+  }
   .container {
     max-width: 1440px;
   }

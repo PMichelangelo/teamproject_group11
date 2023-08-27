@@ -1,6 +1,4 @@
 import './js/menu.js'
-import './js/price.js'
-
 
 (() => {
   const refs = {

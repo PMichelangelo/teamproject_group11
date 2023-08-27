@@ -1,4 +1,5 @@
 .price-section {
+  margin: 64px 0;
 }
 .price-wrapper {
 }
@@ -35,6 +36,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .price-section {
+    margin: 100px 0;
+  }
   .price-item-name {
     font-size: 32px;
   }
