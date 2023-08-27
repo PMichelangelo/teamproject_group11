@@ -64,9 +64,9 @@
   .container {
     max-width: 1320px;
   }
-  /* .bestsellers-item {
+  .bestsellers-item {
     width: calc((100% - 20px) / 2);
-  } */
+  }
   .bestsellers-justify {
     display: flex;
     justify-content: center;

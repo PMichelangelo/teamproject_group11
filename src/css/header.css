@@ -113,6 +113,10 @@
   background-color: #f7faff;
 }
 
+.container.mob-menu-menu {
+  max-width: unset;
+}
+
 .mob-bg-color {
   background-color: #f7faff;
 }
@@ -178,10 +182,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .header-link {
     padding-top: 40px;
     padding-bottom: 39px;
