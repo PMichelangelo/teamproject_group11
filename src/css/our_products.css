@@ -74,4 +74,7 @@
   .our-products .img-item {
     flex-basis: calc((100%-24px * 3) / 4);
   }
+  .our-products .img-item {
+    display: block;
+  }
 }
