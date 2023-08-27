@@ -1,25 +1,3 @@
-.bestsellers-justify {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-  padding: 64px 16px;
-}
-
-/* .bestsellers-container {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-  width: 1096px;
-} */
-
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-} */
 .bestsellers-title {
   text-align: center;
   color: var(--blue-font, #0a224a);
@@ -29,13 +7,8 @@
   text-transform: uppercase;
   margin-bottom: 21px;
 }
-.bestsellers-container {
-}
-.bestsellers-wrap {
-  width: calc((100% - 20px) / 2);
-}
 .bestsellers-wrap-title {
-  width: 343px;
+  /* width: 343px; */
   color: var(--blue-font, #0a224a);
   font-size: 16px;
   font-weight: 400;
@@ -44,24 +17,14 @@
   margin-bottom: 14px;
 }
 .bestsellers-wrap-text {
-  width: 343px;
+  /* width: 343px; */
   color: var(--blue-font, #0a224a);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: 30px;
 }
-/* .bestsellers-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px 20px;
-} */
-
-.bestsellers-list-img {
-  max-width: unset;
-}
-.bestsellers-item:nth-child(n + 3) {
+.items {
   display: none;
 }
 .txt {
@@ -76,15 +39,11 @@
   .container {
     max-width: 704px;
   }
-  .bestsellers-container {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    /* width: 1096px; */
-    flex-direction: column;
+
+  .items {
+    display: inline-block;
   }
-  .bestsellers-wrap {
+  .bestsellers-item {
     width: calc((100% - 32px) / 2);
   }
   .bestsellers-list {
@@ -94,30 +53,40 @@
     gap: 32px 32px;
     width: calc((100% - 32px) / 2);
   }
-  .bestsellers-item:nth-child(n + 3) {
-    display: block;
+  .text {
+    margin-bottom: unset;
   }
+  /* .bestsellers-item:nth-child(n + 3) {
+    display: inline-block;
+  } */
 }
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1320px;
   }
+  /* .bestsellers-item {
+    width: calc((100% - 20px) / 2);
+  } */
   .bestsellers-justify {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  .bestsellers-wrap-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
   .bestsellers-container {
     display: flex;
     gap: 24px;
     align-items: center;
     justify-content: center;
-    width: 1096px;
+    max-width: 1096px;
   }
+
   .bestsellers-list {
-    display: flex;
-    align-items: center;
     flex-direction: row;
     gap: 30px 20px;
   }
