@@ -16,10 +16,15 @@ function togglePseudoElement(item) {
 }
 
 priceItems.forEach(item => {
-  item.addEventListener('click', event => {
+  item.addEventListener('mouseover', event => {
     event.stopPropagation();
     togglePseudoElement(item);
   });
+ item.addEventListener('mouseleave', event => {
+    event.stopPropagation();
+    togglePseudoElement(item);
+  });
+
 });
 
 document.addEventListener('click', hidePseudoElement);
