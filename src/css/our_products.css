@@ -1,7 +1,3 @@
-.our-products {
-  margin-bottom: 64px;
-}
-
 .our-products .title {
   color: var(--blue-font);
 
@@ -77,6 +73,5 @@
   }
   .our-products .img-item {
     flex-basis: calc((100%-24px * 3) / 4);
-    display: block;
   }
 }

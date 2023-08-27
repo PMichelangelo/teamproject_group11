@@ -39,6 +39,7 @@
   .container {
     max-width: 704px;
   }
+
   .items {
     display: inline-block;
   }
@@ -48,8 +49,9 @@
   .bestsellers-list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 32px 32px;
+    width: calc((100% - 32px) / 2);
   }
   .text {
     margin-bottom: unset;
