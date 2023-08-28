@@ -45,8 +45,6 @@
 }
 
 .menu-open-btn {
-  width: 32px;
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,7 +182,7 @@
     width: 127px;
   }
 
-  .menu-open-btn {
+  .header-icon {
     width: 40px;
     height: 40px;
   }
