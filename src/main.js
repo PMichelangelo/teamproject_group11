@@ -1,3 +1,5 @@
+import './js/menu.js'
+
 (() => {
   const refs = {
     openMenuBtn: document.querySelector('[data-menu-open]'),
@@ -13,3 +15,4 @@
     document.body.classList.toggle('no-scroll');
   }
 })();
+
