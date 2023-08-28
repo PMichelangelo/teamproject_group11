@@ -3,16 +3,25 @@
   background-color: var(--light-blue);
 }
 
+.image-container {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/about-us/about-mobile-new.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .image-container {
+      background-image: url(../img/about-us/about-mobile-new-2x.jpg);
+    }
+  }
+  background-repeat: no-repeat;
+  background-position-x: 27%;
+}
+
 .title-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 64px;
-}
-
-.line-container {
-  position: relative;
-  width: 30px;
 }
 
 .about-title::before {
@@ -147,7 +156,7 @@
     font-size: 18px;
   }
 
-  .img-mobile {
+  .image-container {
     display: none;
   }
 
