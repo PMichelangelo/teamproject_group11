@@ -32,6 +32,36 @@
   line-height: 1.5; /* 150% */
 }
 
+.price-list-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.price-item-name {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s;
+}
+
+.price-item-name:hover {
+  transform: translateX(80px);
+}
+
+.price-item-name::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-80px);
+  width: 50px;
+  height: 3px;
+  background-color: var(--blue-font);
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s;
+}
+
+.price-item-name:hover::before {
+  opacity: 1;
+}
+
 @media screen and (min-width: 375px) {
 }
 
