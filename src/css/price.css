@@ -38,7 +38,7 @@
 }
 
 .price-item-name {
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
 .price-item-name:hover {
@@ -55,7 +55,7 @@
   height: 3px;
   background-color: var(--blue-font);
   opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
 .price-item-name:hover::before {
