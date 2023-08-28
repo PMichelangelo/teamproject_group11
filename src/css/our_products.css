@@ -1,3 +1,7 @@
+.our-products {
+  margin-bottom: 64px;
+}
+
 .our-products .title {
   color: var(--blue-font);
 
@@ -35,6 +39,10 @@
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
+  .our-products {
+    margin-bottom: 100px;
+  }
+
   .container {
     max-width: 704px;
   }
@@ -72,6 +80,9 @@
     gap: 24px;
   }
   .our-products .img-item {
-    flex-basis: calc((100%-24px * 3) / 4);
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+  .our-products .img-item {
+    display: block;
   }
 }

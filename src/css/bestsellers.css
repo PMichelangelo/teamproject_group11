@@ -5,30 +5,27 @@
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
-  margin-bottom: 21px;
+  padding-bottom: 21px;
 }
 .bestsellers-wrap-title {
-  /* width: 343px; */
   color: var(--blue-font, #0a224a);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  margin-top: 15px;
-  margin-bottom: 14px;
+  padding: 15px 0 14px;
 }
 .bestsellers-wrap-text {
-  /* width: 343px; */
   color: var(--blue-font, #0a224a);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .items {
   display: none;
 }
 .txt {
-  margin-bottom: unset;
+  padding-bottom: unset;
 }
 @media screen and (min-width: 375px) {
   .container {
@@ -38,6 +35,12 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 704px;
+  }
+  .bestsellers-wrap-text {
+    font-size: 18px;
+  }
+  .bestsellers-wrap-title {
+    font-size: 18px;
   }
 
   .items {
@@ -49,45 +52,55 @@
   .bestsellers-list {
     display: flex;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 32px 32px;
-    width: calc((100% - 32px) / 2);
   }
   .text {
-    margin-bottom: unset;
+    padding-bottom: unset;
   }
-  /* .bestsellers-item:nth-child(n + 3) {
-    display: inline-block;
-  } */
 }
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1320px;
   }
-  /* .bestsellers-item {
-    width: calc((100% - 20px) / 2);
-  } */
+  .bestsellers-wrap-title {
+    padding-bottom: 10px;
+  }
+  .bestsellers-wrap-text {
+    height: 24px;
+  }
   .bestsellers-justify {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    max-width: 1096px;
+  }
+  .bestsellers-item {
+    width: calc((100% - 20px) / 2);
   }
   .bestsellers-wrap-container {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    max-width: 536px;
   }
   .bestsellers-container {
     display: flex;
-    gap: 24px;
-    align-items: center;
+    gap: 20px;
     justify-content: center;
     max-width: 1096px;
+    margin: 0 auto;
+  }
+
+  .bed-img {
+    width: 100%;
+    max-width: 536px;
   }
 
   .bestsellers-list {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px 20px;
+    justify-content: center;
+    max-width: 704px;
+  }
+
+  .bestsellers-wrap img {
+    width: 100%;
+    max-width: 258px;
   }
 }
