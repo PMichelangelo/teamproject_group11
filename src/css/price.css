@@ -37,6 +37,10 @@
   overflow: hidden;
 }
 
+.price-hidden-title {
+  display: none;
+}
+
 @media screen and (min-width: 375px) {
 }
 
