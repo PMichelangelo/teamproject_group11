@@ -3,21 +3,6 @@
   background-color: var(--light-blue);
 }
 
-.image-container {
-  width: 100%;
-  height: 400px;
-  background-image: url(../img/about-us/about-mobile-new.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .image-container {
-      background-image: url(../img/about-us/about-mobile-new-2x.jpg);
-    }
-  }
-  background-repeat: no-repeat;
-  background-position-x: 27%;
-}
-
 .title-container {
   display: flex;
   align-items: center;
@@ -45,24 +30,24 @@
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .about-description {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
-  padding-top: 30px;
+  margin-top: 30px;
   letter-spacing: 0.02em;
 }
 
 .advantages-list {
-  padding-top: 30px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .advantages-item {
@@ -75,7 +60,7 @@
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .advantages-text {
@@ -150,6 +135,7 @@
   .advantages-list {
     flex-direction: row;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .advantages-text {
@@ -157,6 +143,10 @@
   }
 
   .image-container {
+    display: none;
+  }
+
+  .img-mobile {
     display: none;
   }
 
@@ -204,7 +194,7 @@
   }
 
   .advantages-numbers {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .img-desktop {
