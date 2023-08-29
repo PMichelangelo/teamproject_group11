@@ -119,7 +119,6 @@
 
   .about-container {
     padding: 36px 64px 36px 64px;
-    max-width: 576px;
     background-color: var(--light-blue);
     margin-bottom: 30px;
   }
@@ -169,7 +168,6 @@
 
   .about-container {
     padding: 36px 69px 36px 69px;
-    max-width: 760px;
   }
 
   .about-subtitle {
